@@ -18,3 +18,18 @@
     margin: 10px;
     padding: 10px;
 }
+
+.courses-container .card {
+    flex: 0 0 250px;
+    background-color: #0477BF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+.courses-container .card:hover {
+    background-color: #048ABF;
+    transform: scale(1.10);
+}
