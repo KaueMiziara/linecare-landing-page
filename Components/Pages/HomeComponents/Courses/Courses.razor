@@ -3,30 +3,20 @@
 
 <PageTitle>Line Care Cursos e Treinamentos para Profissionais da Saúde</PageTitle>
 
+@using LineCareLandingPage.Models;
+@using LineCareLandingPage.ViewModels;
+
+@code {
+    private CoursesViewModel _viewModel = new CoursesViewModel();
+}
+
 <div id="cursos" class="courses-section-container">
     <div class="courses-container">
-        <div class="card">
-            <Card />
-        </div>
-
-        <div class="card">
-            <Card />
-        </div>
-
-        <div class="card">
-            <Card />
-        </div>
-
-        <div class="card">
-            <Card />
-        </div>
-
-        <div class="card">
-            <Card />
-        </div>
-
-        <div class="card">
-            <Card />
-        </div>
+        @foreach (var course in _viewModel.Courses)
+        {
+            <div class="card">
+                <Card />
+            </div>
+        }
     </div>
 </div>
