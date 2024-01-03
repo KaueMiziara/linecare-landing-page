@@ -1,0 +1,35 @@
+.courses-section-container {
+    background: rgb(4,138,191);
+    background: linear-gradient(180deg, rgba(4,138,191,1) 0%, rgba(0,115,189,1) 100%);
+    color: aliceblue;
+
+    position: relative;
+    margin: 0 calc(-50vw + 49%);
+    padding: 1px;
+
+    width: 100vw;
+}
+
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.courses-container .card {
+    flex: 0 0 250px;
+    background-color: #0477BF;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+.courses-container .card:hover {
+    background-color: #048ABF;
+    transform: scale(1.10);
+}

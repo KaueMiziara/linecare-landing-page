@@ -3,16 +3,20 @@
 
 <PageTitle>Line Care Cursos e Treinamentos para Profissionais da Saúde</PageTitle>
 
-<div id="cursos">
-    <h2>Cursos e Minicursos</h2>
+@using LineCareLandingPage.Models;
+@using LineCareLandingPage.ViewModels;
 
-    <ul>
-        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptatibus quisquam obcaecati optio, blanditiis saepe quibusdam necessitatibus, repellat accusantium similique, repudiandae veniam tempore nihil deserunt esse fugiat voluptates unde quis!</li>
-        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptatibus quisquam obcaecati optio, blanditiis saepe quibusdam necessitatibus, repellat accusantium similique, repudiandae veniam tempore nihil deserunt esse fugiat voluptates unde quis!</li>
-        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptatibus quisquam obcaecati optio, blanditiis saepe quibusdam necessitatibus, repellat accusantium similique, repudiandae veniam tempore nihil deserunt esse fugiat voluptates unde quis!</li>
-        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptatibus quisquam obcaecati optio, blanditiis saepe quibusdam necessitatibus, repellat accusantium similique, repudiandae veniam tempore nihil deserunt esse fugiat voluptates unde quis!</li>
-        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptatibus quisquam obcaecati optio, blanditiis saepe quibusdam necessitatibus, repellat accusantium similique, repudiandae veniam tempore nihil deserunt esse fugiat voluptates unde quis!</li>
-        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptatibus quisquam obcaecati optio, blanditiis saepe quibusdam necessitatibus, repellat accusantium similique, repudiandae veniam tempore nihil deserunt esse fugiat voluptates unde quis!</li>
-        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum voluptatibus quisquam obcaecati optio, blanditiis saepe quibusdam necessitatibus, repellat accusantium similique, repudiandae veniam tempore nihil deserunt esse fugiat voluptates unde quis!</li>
-    </ul>
+@code {
+    private CoursesViewModel _viewModel = new CoursesViewModel();
+}
+
+<div id="cursos" class="courses-section-container">
+    <div class="courses-container">
+        @foreach (var course in _viewModel.Courses)
+        {
+            <div class="card">
+                <Card />
+            </div>
+        }
+    </div>
 </div>
