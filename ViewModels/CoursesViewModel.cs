@@ -9,15 +9,15 @@ public class CoursesViewModel
 
     public CoursesViewModel()
     {
-        this.AddCourse("A", "B");
-        this.AddCourse("B", "C");
-        this.AddCourse("C", "D");
-        this.AddCourse("C", "D");
+        AddCourse("A", "B");
+        AddCourse("B", "C");
+        AddCourse("C", "D");
+        AddCourse("C", "D");
     }
 
     public void AddCourse(string name, string description)
     {
-        Course course = new Course()
+        Course course = new()
         {
             Id = new Random().Next(1, 100),
             Name = name,
