@@ -9,10 +9,7 @@ public class CoursesViewModel
 
     public CoursesViewModel()
     {
-        AddCourse("A", "B");
-        AddCourse("B", "C");
-        AddCourse("C", "D");
-        AddCourse("C", "D");
+        InitializeCoursesList();
     }
 
     public void AddCourse(string name, string description)
@@ -25,5 +22,13 @@ public class CoursesViewModel
         };
 
         _coursesList = _coursesList.Append(course);
+    }
+
+    private void InitializeCoursesList()
+    {
+        AddCourse("A", "B");
+        AddCourse("B", "C");
+        AddCourse("C", "D");
+        AddCourse("E", "F");
     }
 }
