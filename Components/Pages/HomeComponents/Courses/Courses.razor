@@ -15,7 +15,7 @@
         @foreach (var course in _viewModel.Courses)
         {
             <div class="card">
-                <Card />
+                <Card Name=@course.Name Description=@course.Description />
             </div>
         }
     </div>

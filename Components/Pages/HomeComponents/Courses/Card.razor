@@ -1,6 +1,14 @@
 @rendermode InteractiveServer
 
 <div>
-    <p><b>Nome</b>: aa</p>
-    <p><b>Descrição</b>: bb</p>
+    <p><b>Nome</b>: @Name</p>
+    <p><b>Descrição</b>: @Description</p>
 </div>
+
+@code {
+    [Parameter]
+    public string Name { get; set; }
+
+    [Parameter]
+    public string Description { get; set; }
+}
