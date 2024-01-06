@@ -5,7 +5,7 @@ namespace LineCareLandingPage.ViewModels;
 public class CoursesViewModel
 {
     private IEnumerable<Course> _coursesList = new List<Course>();
-    public IEnumerable<Course> Courses { get => _coursesList; }
+    public IEnumerable<Course> Courses { get => _coursesList; set => _coursesList = value; }
 
     public CoursesViewModel()
     {
