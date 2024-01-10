@@ -1,0 +1,68 @@
+.footer-container {
+    background-color: #0073BD;
+    color: aliceblue;
+
+    position: relative;
+    margin: 0 calc(-50vw + 49%);
+    padding: 0;
+
+    height: auto;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    margin: 50px;
+    padding: 50px 80px;
+
+    text-align: left;
+}
+
+.footer .info {
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+
+    width: 100%;
+
+    justify-content: center;
+    
+    font-size: 0.95em;
+}
+
+.footer .info .trademark {
+    width: 25%;
+}
+
+.footer .info .features {
+    width: 25%;
+}
+
+.footer .info .courses-names {
+    width: 25%;
+}
+
+.footer .info .contact-info {
+    width: 25%;
+}
+
+.footer .info .contact-info .social {
+    display: flex;
+}
+
+.footer .info .contact-info .social .social-item {
+    padding: 0px 10px 0px 0px;
+}
+
+.footer .copyright {
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+
+    font-size: 0.9em;
+    line-height: 80%;
+}
