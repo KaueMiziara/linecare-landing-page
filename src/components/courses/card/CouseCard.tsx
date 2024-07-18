@@ -5,7 +5,7 @@ interface CardProps {
     description: string;
 }
 
-const Card: React.FC<CardProps> = ({ cardName, description }) => {
+const CourseCard: React.FC<CardProps> = ({ cardName, description }) => {
     return (
         <div className="card">
             <p><b>Nome</b>: {cardName}</p>
@@ -14,4 +14,4 @@ const Card: React.FC<CardProps> = ({ cardName, description }) => {
     )
 }
 
-export default Card;
+export default CourseCard;

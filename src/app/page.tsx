@@ -1,7 +1,7 @@
-import About from '../components/About';
-import Overview from '../components/Overview';
-import Courses from '../components/Courses';
-import Footer from '../components/Footer';
+import About from '../components/about/About';
+import Overview from '../components/overview/Overview';
+import Courses from '../components/courses/Courses';
+import Footer from '../components/footer/Footer';
 
 export default function Home() {
     return (
