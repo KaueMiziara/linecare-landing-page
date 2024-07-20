@@ -39,8 +39,6 @@ export default function Footer() {
                 <div className="copyright">
                     <p>&copy; 2024 - Line Care Cursos e Treinamentos -
                         Por <a href="https://www.linkedin.com/in/kauemiziara/">Kauê Miziara</a></p>
-                    <p>O [código fonte] deste website está licensiado sob a 
-                        licença <a href="https://www.gnu.org/licenses/agpl-3.0.pt-br.html">AGPL-3.0</a></p>
                 </div>
             </div>
         </div>
