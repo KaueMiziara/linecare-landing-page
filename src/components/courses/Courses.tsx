@@ -1,5 +1,4 @@
 import CourseCard from './card/CouseCard';
-import './style.css';
 
 export default function Courses() {
     return (
